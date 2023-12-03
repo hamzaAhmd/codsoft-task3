@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calc.css">
+    <title>calculator</title>
+  </head>
+  <body>
+    <center>
+      <div class="Container">
+      <h1>Calculate here  </h1>
+      <input id="screen" type="text" readonly/>
+
+      <div class="buttons">
+        <button class="operator"  onclick="DeleteValue()">AC</button>
+        <button class="operator"  onclick="deleteLastCharacter()">DEL</button>
+        <button class="operator"  onclick="valueAppend('%')">%</button>
+        <button class="operator"  onclick="valueAppend('/')">/</button>
+
+        <button onclick="valueAppend('7')">7</button>
+        <button onclick="valueAppend('8')">8</button>
+        <button onclick="valueAppend('9')">9</button>
+        <button class="operator" onclick="valueAppend('*')">*</button>
+
+        <button onclick="valueAppend('4')">4</button>
+        <button onclick="valueAppend('5')">5</button>
+        <button onclick="valueAppend('6')">6</button>
+        <button class="operator" onclick="valueAppend('-')">-</button>
+
+        <button onclick="valueAppend('1')">1</button>
+        <button onclick="valueAppend('2')">2</button>
+        <button onclick="valueAppend('3')">3</button>
+        <button class="operator" onclick="valueAppend('+')">+</button>
+
+        <button onclick="valueAppend('0')">0</button>
+        <button  onclick="valueAppend('00')">00</button>
+        <button onclick="valueAppend('.')">.</button>
+        <button class="operator" onclick="calculate()">=</button>
+      </div>
+    </div>
+</center>
+<script src="./calc.js"></script>
+  </body>
+</html>
